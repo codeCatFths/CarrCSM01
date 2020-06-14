@@ -71,6 +71,17 @@
       }
       
     </style>
+	  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn();
+			$("#div3").fadeIn();
+		});
+	});
+</script>
   </head>
   
   <body>
@@ -95,50 +106,58 @@
         </div>
     
       <div id="resumeContent">
+	      
+      <button>Click to show resume details</button> 
+	      
+	      <div id="div1">	      
+	      <h3>Experience</h3>
+		<div id="div1">
+			<p>
+			  Instructor at Foothill Technology High School in Ventura CA from August 2000 to present.<br>
+			</p>
 
-      <h3>Experience</h3>
-        <p>
-          Instructor at Foothill Technology High School in Ventura CA from August 2000 to present.<br>
-        </p>
-        
-        <p>Technology Mentor for California Technology Assistance Project from May 1999 - December 2007.
-        </p>
+			<p>Technology Mentor for California Technology Assistance Project from May 1999 - December 2007.
+			</p>
 
-        <p>
-          Instructor at Pierpont Elementary School in Ventura CA from August 1996 to June 2000.<br>
-        </p>
+			<p>
+			  Instructor at Pierpont Elementary School in Ventura CA from August 1996 to June 2000.<br>
+			</p>
+		</div>
 
-      <h3>Skills</h3>
-        <ul>
-          <li>Web site development: front end</li>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
+     	
+	      <h3>Skills</h3>
+		<div id="div2">
+			<ul>
+			  <li>Web site development: front end</li>
+			  <ul>
+			    <li>HTML</li>
+			    <li>CSS</li>
+			    <li>Javascript</li>
+			  </ul>
 
-          <li>Programming</li>
-            <ul>a
-              <li>C++</li>
-              <li>Java</li>
-              <li>Procedural programming</li>
-              <li>Object-oriented programming</li>
-            </ul>
+			  <li>Programming</li>
+			    <ul>a
+			      <li>C++</li>
+			      <li>Java</li>
+			      <li>Procedural programming</li>
+			      <li>Object-oriented programming</li>
+			    </ul>
 
-          <li>Graphic editing: Photoshop</li>
-          <li>Graphic illustration: Illustrator</li>
-          <li>3D modeling: Tinkercad</li>
-          <li>3D printing: Flashforge, Lulzbot</li>
-        </ul>
+			  <li>Graphic editing: Photoshop</li>
+			  <li>Graphic illustration: Illustrator</li>
+			  <li>3D modeling: Tinkercad</li>
+			  <li>3D printing: Flashforge, Lulzbot</li>
+			</ul>
+		</div>
 
-      <h3>Education</h3>
-
-        <h4>Ventura County Community College District, current</h5>
-        <h4>Azusa Pacific University, MEd Educational Technology, 1998-2000</h5>
-        <h4>CSU Northridge, MST Credential, 1993-1995</h5>
-        <h4>UC Santa Barbara, BA Psychology, 1988-1993</h5>
-
-      </div>
+	      <h3>Education</h3>
+		<div id="div3">
+			<h4>Ventura County Community College District, current</h5>
+			<h4>Azusa Pacific University, MEd Educational Technology, 1998-2000</h5>
+			<h4>CSU Northridge, MST Credential, 1993-1995</h5>
+			<h4>UC Santa Barbara, BA Psychology, 1988-1993</h5>
+		</div>
+	      </div>
     
       <br>
       <center>
