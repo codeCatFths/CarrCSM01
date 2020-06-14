@@ -1,170 +1,176 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Conni Carr's Resume</title>
+    <head>
+        <title>Conni Carr's Resume</title>
+        
+        <style>
+            #main{
+                margin: auto;
+                width: 80%;
+                padding: 10px;
+                border: 5px solid gray;
+                background-color: white;
+            }
+        
+        #goals{
+            margin: auto;
+            width: 80%;
+            padding: 5px;
+            background-color: white;
+        }
+        
+        #resumeContent{
+            display: none;
+            margin: auto;
+            background-color: #f5f3f2;
+            padding: 5px;
+            border: 1px solid black;
+            width: 80%;
+        }
+        
+        .centered
+        {
+            text-align: center;
+        }
+        
+        .note{
+            color: gray;
+        }
+        
+        body{
+            background-color: black;
+            font-family: sans-serif;
+        }
+        
+        img{
+            border: 1px solid black;
+            width: 60%;
+            height: 60%;
+            padding: 10px;
+            opacity: .5;
+        }
+        
+        img:hover{
+            opacity: 1;
+        }
+        
+        h1{
+            font-weight: bold;
+            color: #91150c;
+        }
+        
+        h3{
+            color: #6b6261;
+        }
+        
+        h5{
+            font-weight: .5;
+        }
+        
+        button{
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            border: 1px solid #91150c;
+        }
+        
+            </style>
+        <script>
+            function showResumeContent() {
+                var x = document.getElementById("resumeContent");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        
+        
+    </head>
     
-    <style>
-      #main{
-        margin: auto;
-        width: 80%;
-        padding: 10px;
-        border: 5px solid gray; 
-        background-color: white;
-      }
-      
-      #goals{
-        margin: auto;
-        width: 80%;
-        padding: 5px;
-        background-color: white;
-      }
-      
-      #resumeContent{
-      	display: none;
-	margin: auto;
-        background-color: #f5f3f2;
-        padding: 5px;
-        border: 1px solid black;
-        width: 80%;
-      }
-      
-      .centered
-      { 
-      	text-align: center;
-      }
-      
-      body{
-        background-color: black;
-	font-family: sans-serif;
-      }
-      
-      img{
-        border: 1px solid black;
-	width: 60%;
-	height: 60%;
-        padding: 10px;
-	opacity: .5;
-      }
-	    
-      img:hover{
-        opacity: 1;
-      }    
-      
-      h1{
-        font-weight: bold;
-        color: #91150c;
-      }
-      
-      h3{
-        color: #6b6261;
-      }
-	    
-      h5
-      {
-	font-weight: .5;
-      }
-	    
-      button{
-        background-color: black;
-	color: white;
-	border-radius: 4px;
-	border: 1px solid #91150c;      
-      }
-      
-    </style>
-    <script>
-	function showResumeContent() {
-  		var x = document.getElementById("resumeContent");
-  		if (x.style.display === "none") {
-   		 x.style.display = "block";
-  		} else {
-   		 x.style.display = "none";
-  		}
-	}
-    </script>	    
-	  
-	 
-  </head>
-  
-  <body>
-  
-    <div id="main">
-    
-      <h1 class="centered">Conni Carr</h1>
-
-        <figure class="centered">
-          <img src="images/carrsatventurabeachsunset.jpg" alt="IMAGE: Conni Carr" />
-          <figcaption>Ventura Beach at Sunset</figcaption>
-        </figure>
-
-		<div id="goals">
-		  <h2>Goals</h2>
-
-		    <ol>
-		      <li>Enhance and extend coding knowledge</li>
-		      <li>Share enjoyment of programming with others</li>
-		      <li>Experiment with programming in a variety of tools</li>
-		    </ol>
-		</div>
-
-      	      <button onclick="showResumeContent()">Click to see resume content</button>
-	      
-	      <div id="resumeContent">
-
-	      <h3>Experience</h3>
-		<p>
-		  Instructor at Foothill Technology High School in Ventura CA from August 2000 to present.<br>
-		</p>
-
-		<p>Technology Mentor for California Technology Assistance Project from May 1999 - December 2007.
-		</p>
-
-		<p>
-		  Instructor at Pierpont Elementary School in Ventura CA from August 1996 to June 2000.<br>
-		</p>
-
-	      <h3>Skills</h3>
-		<ul>
-		  <li>Web site development: front end</li>
-		  <ul>
-		    <li>HTML</li>
-		    <li>CSS</li>
-		    <li>Javascript</li>
-		  </ul>
-
-		  <li>Programming</li>
-		    <ul>a
-		      <li>C++</li>
-		      <li>Java</li>
-		      <li>Procedural programming</li>
-		      <li>Object-oriented programming</li>
-		    </ul>
-
-		  <li>Graphic editing: Photoshop</li>
-		  <li>Graphic illustration: Illustrator</li>
-		  <li>3D modeling: Tinkercad</li>
-		  <li>3D printing: Flashforge, Lulzbot</li>
-		</ul>
-
-	      <h3>Education</h3>
-		<h4>Ventura County Community College District, current</h5>
-		<h4>Azusa Pacific University, MEd Educational Technology, 1998-2000</h5>
-		<h4>CSU Northridge, MST Credential, 1993-1995</h5>
-		<h4>UC Santa Barbara, BA Psychology, 1988-1993</h5>
-
-	      </div>
-    
-	      <div id="footer">	      
-	      <br>
-	      <center>
-		      <p>Javascript used below to create a button that when clicked opens URL in a new window/tab</p>
-		      <button type="button" onclick="window.open('http://www.connicarr.com','_blank')">connicarr.com</button><br><br>
-
-		      <a href="https://htmlpreview.github.io/?https://github.com/codeCatFths/CarrCSM01/blob/master/resume.html" target="_blank">
-			View this github code in the browser
-		      </a>
-	      </center>
-	      </div>	      
-    </div>
-  </body>
+    <body>
+        
+        <div id="main">
+            
+            <h1 class="centered">Conni Carr</h1>
+            
+            <figure class="centered">
+                <img src="images/carrsatventurabeachsunset.jpg" alt="IMAGE: Conni Carr" />
+                <figcaption>Ventura Beach at Sunset</figcaption>
+            </figure>
+            
+            <div id="goals">
+                <h2>Goals</h2>
+                
+                <ol>
+                    <li>Enhance and extend coding knowledge</li>
+                    <li>Share enjoyment of programming with others</li>
+                    <li>Experiment with programming in a variety of tools</li>
+                </ol>
+                
+                <p class="note"><small><em>Javascript: button when clicked shows/hides resume content</em></small></p>
+                <button onclick="showResumeContent()">Click to show/hide resume content</button>
+            </div>
+            
+            
+            <div id="resumeContent">
+                
+                <h3>Experience</h3>
+                <p>
+                Instructor at Foothill Technology High School in Ventura CA from August 2000 to present.<br>
+                </p>
+                
+                <p>Technology Mentor for California Technology Assistance Project from May 1999 - December 2007.
+                </p>
+                
+                <p>
+                Instructor at Pierpont Elementary School in Ventura CA from August 1996 to June 2000.<br>
+                </p>
+                
+                <h3>Skills</h3>
+                <ul>
+                    <li>Web site development: front end</li>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                    
+                    <li>Programming</li>
+                    <ul>a
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Procedural programming</li>
+                        <li>Object-oriented programming</li>
+                    </ul>
+                    
+                    <li>Graphic editing: Photoshop</li>
+                    <li>Graphic illustration: Illustrator</li>
+                    <li>3D modeling: Tinkercad</li>
+                    <li>3D printing: Flashforge, Lulzbot</li>
+                </ul>
+                
+                <h3>Education</h3>
+                <h4>Ventura County Community College District, current</h5>
+                    <h4>Azusa Pacific University, MEd Educational Technology, 1998-2000</h5>
+                        <h4>CSU Northridge, MST Credential, 1993-1995</h5>
+                            <h4>UC Santa Barbara, BA Psychology, 1988-1993</h5>
+                                
+                                </div>
+            
+            <div id="footer">
+                <br>
+                <center>
+                    <p class="note"><small><em>Javascript: button when clicked opens URL new window/tab</em></small></p>
+                    <button type="button" onclick="window.open('http://www.connicarr.com','_blank')">connicarr.com</button><br><br>
+                    
+                    <a href="https://htmlpreview.github.io/?https://github.com/codeCatFths/CarrCSM01/blob/master/resume.html" target="_blank">
+                        View this github code in the browser
+                    </a>
+                </center>
+            </div>
+        </div>
+    </body>
 </html>
