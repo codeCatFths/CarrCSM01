@@ -20,7 +20,8 @@
       }
       
       #resumeContent{
-      	margin: auto;
+      	display: none;
+	margin: auto;
         background-color: #f5f3f2;
         padding: 5px;
         border: 1px solid black;
@@ -71,6 +72,17 @@
       }
       
     </style>
+    <script>
+	function showResumeContent() {
+  		var x = document.getElementById("resumeContent");
+  		if (x.style.display === "none") {
+   		 x.style.display = "block";
+  		} else {
+   		 x.style.display = "none";
+  		}
+	}
+    </script>	    
+	  
 	 
   </head>
   
@@ -94,7 +106,9 @@
               <li>Experiment with programming in a variety of tools</li>
             </ol>
         </div>
-    
+	    
+      <button onclick="showResumeContent()">Click to see resume content/button>
+	      
       <div id="resumeContent">
 	      	      
       <h3>Experience</h3>
