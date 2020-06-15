@@ -58,6 +58,7 @@
         
         #connicarrcom
         {
+            clear: both;
             width: 300px;
             border: 1px solid rgb(191, 215, 224, 1);
             background-color: white;
@@ -70,12 +71,40 @@
         }
         
         #bottom{
+            clear: both;
             background-color: white;
             border-top: 5px solid rgb(191, 215, 224, 1);
         }
         
+        #button2{
+            clear: both;
+            background-color: white;
+        }
+        
+        #imagegallery{
+            margin-top: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+        }
+        
         .article{
             padding: 20px;
+        }
+        
+        .gallery{
+            width: 33.33%;
+            float: left;
+            
+            outline: 5px solid white;
+            outline-offset: -5px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
         
         body{
@@ -267,12 +296,32 @@
             
             
             
-            
-            
-            <div id="bottom" class="article">
+            <div id="bottom">
+                
+                <div id="imagegallery">
+                    
+                    <small style="font-size:.65em;"><em>Javascript: Mouseover any image to swap
+                                                    <br>NOTE: when(viewport > 1200) myImage3 javascript gets quirky
+                                                    </em></small>
+                    
+                    <hr>
+                    
+                    <img class="gallery" id="myImage1" src="images/fightingdevelopcats.jpg" onmouseover="document.getElementById('myImage1').src='images/iarecomputerprogrammercat.jpg'" onmouseout="document.getElementById('myImage1').src='images/fightingdevelopcats.jpg'"  />
+                    
+                    <img class="gallery" id="myImage2" src="images/catprofessorlightbulbjoke.jpg" onmouseover="document.getElementById('myImage2').src='images/mousechasercat.jpg'" onmouseout="document.getElementById('myImage2').src='images/catprofessorlightbulbjoke.jpg'"  />
+                    
+                    <!-- if viewport > 1200 then myImage3 javascript gets quirky -->
+                    <img class="gallery" id="myImage3" src="images/badcatcoder.jpg" onmouseover="document.getElementById('myImage3').src='images/badcatarrays.jpg'" onmouseout="document.getElementById('myImage3').src='images/badcatcoder.jpg'"  />
+                    
+
+                    
+                </div>
+                
+                <div id="button2">
                 
                 <br>
                 <center>
+                    <hr width="80%">
                     <button id="connicarrcom" type="button" onclick="window.open('http://www.connicarr.com','_blank')">
                         <small><em>Javascript: opens connicarr.com in new window/tab</em></small>
                     </button><br><br>
@@ -281,6 +330,8 @@
                         View this github code in the browser
                     </a>
                 </center>
+                
+                </div>
             
             </div>
         
