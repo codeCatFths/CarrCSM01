@@ -27,6 +27,10 @@
             font-family: cadara, geneva, sans-serif;
         }
         
+        #main{
+            background-color: rgb(191, 215, 224, 1);
+        }
+        
         #mainImage{
             width: 100%;
         }
@@ -77,46 +81,10 @@
             background-color: white;
         }
         
-        @media screen and (max-width: 976px)
-        {
-            #main{
-                background-color: white;
-            }
-            
-            #button1{
-                position: static;
-                margin-left: 20px;
-            }
-            
-            button{
-                background-color: rgb(191, 215, 224, .75);
-            }
-            
-            #mainTitle{
-                top: 25px;
-                left: 25px;
-            }
-            
-            #goals{
-                position: static;
-            }
-        }
-        
-        @media screen and (max-width: 550px)
-        {
-            h1{
-                font-size: 1.75em;
-            }
-        }
-        
-        .article{
-            padding: 20px;
-        }
-        
         #resumeContent{
             display: none;
-            background-color: rgb(191, 215, 224, .75);
             font-weight: lighter;
+            margin-left: 65px;
         }
         
         a:link,a:active,a:visited{
@@ -134,8 +102,67 @@
             text-shadow: 1px 1px 10px black;
         }
         
-        h1,h2{
+        h1,h2,h3{
             margin-top: 0;
+        }
+        
+        h3{
+            color: rgb(58, 96, 145, 1);
+        }
+        
+        #bottom{
+            background-color: white;
+            border-top: 5px solid rgb(191, 215, 224, 1);
+        }
+        
+        .article{
+            padding: 20px;
+        }
+        
+        sup{
+            font-size: .75em;
+            color: rgb(58, 96, 145, 1);
+        }
+        
+        li{
+            line-height: 150%;
+        }
+        
+        @media screen and (max-width: 976px)
+        {
+            #showResume{
+                border-radius: 6px 6px 0 0;
+                text-align: left;
+                background-color: rgb(191, 215, 224, 1);
+            }
+            
+            #button1{
+                position: static;
+                width: 100%;
+                background-color: rgb(255, 255, 255, .75);
+            }
+            
+            #mainTitle{
+                top: 25px;
+                left: 25px;
+            }
+            
+            #goals{
+                position: static;
+                width: 100%;
+                border-radius: 0;
+            }
+            
+            #resumeContent{
+                margin-left: 0;
+            }
+        }
+        
+        @media screen and (max-width: 550px)
+        {
+            h1{
+                font-size: 1.75em;
+            }
         }
         
         </style>
@@ -179,22 +206,28 @@
                 
                 <blockquote>
                     <p>
-                    <strong><em>Instructor</em></strong>, Foothill Technology High School, Ventura CA from August 2000 to present
+                    <strong><em>Instructor</em></strong> <sup>[Computer Science, College and Career]</sup>
+                    <br>Foothill Technology High School, Ventura CA,
+                    <br>August 2000 to present
                     </p>
                     
                     <p>
-                    <strong><em>Technology Mentor</em></strong>, California Technology Assistance Project, May 1999 - December 2007
+                    <strong><em>Technology Mentor</em></strong><sup> [Professional Development Workshops]</sup>
+                    <br>California Technology Assistance Project,
+                    <br>May 1999 to December 2007
                     </p>
                     
                     <p>
-                    <strong><em>Instructor</em></strong>, Pierpont Elementary School in Ventura CA, August 1996 to June 2000
+                    <strong><em>Teacher</em></strong> <sup>[Grade 2]</sup>, <strong><em>Technology Support Advisor</em></strong>
+                    <br>Pierpont Elementary School in Ventura CA,
+                    <br>August 1996 to June 2000
                     </p>
                 </blockquote>
                 
                 <h3>Skills</h3>
                 
                 <ul>
-                    <li>Web site development: front end</li>
+                    <li>Web site development<sup> [Front End]</sup></li>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -209,10 +242,11 @@
                         <li>Object-oriented programming</li>
                     </ul>
                     
-                    <li>Graphic editing: Photoshop</li>
-                    <li>Graphic illustration: Illustrator</li>
-                    <li>3D modeling: Tinkercad</li>
-                    <li>3D printing: Flashforge, Lulzbot</li>
+                    <li>Graphic editing<sup> [Photoshop, Fireworks]</sup></li>
+                    <li>Graphic illustration<sup> [Illustrator]</sup></li>
+                    <li>Animation<sup> [Flash]</sup></li>
+                    <li>3D modeling<sup> [Tinkercad]</sup></li>
+                    <li>3D printing<sup> [Flashforge, Lulzbot]</sup></li>
                 </ul>
                 
                 <h3>Education</h3>
@@ -238,7 +272,7 @@
                         <small><em>Javascript: opens connicarr.com in new window/tab</em></small>
                     </button><br><br>
                     
-                    <a href="https://htmlpreview.github.io/?https://github.com/codeCatFths/CarrCSM01/blob/master/resume.html" target="_blank">
+                    <a href="https://htmlpreview.github.io/?https://github.com/codeCatFths/CarrCSM01/blob/master/resume2.html" target="_blank">
                         View this github code in the browser
                     </a>
                 </center>
