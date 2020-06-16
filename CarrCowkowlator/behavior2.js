@@ -50,6 +50,11 @@ function getDigit(digit)
 {
     if(inputCounter == 0)
     {
+        if(digit == 3.14159)
+        {
+            mmmpie.play();
+        }
+        
         op1 = digit;
         inputCounter = inputCounter + 1;
         document.getElementById("output").innerHTML = op1;
@@ -60,6 +65,11 @@ function getDigit(digit)
     }
     else if(inputCounter == 2)
     {
+        if(digit == 3.14159)
+        {
+            mmmpie.play();
+        }
+        
         op2 = digit;
         inputCounter = inputCounter + 1;
         document.getElementById("output").innerHTML = op2;
@@ -167,7 +177,13 @@ function calculate()
             document.getElementById("output").innerHTML = "pick #";
         
         if( inputCounter == 1 ) // ends process, show current op1 value
-            document.getElementById("output").innerHTML = "=" + op1;
+        {
+            if( op1 == 3.14159 )
+            {
+                mmmpie.play();
+            }
+            document.getElementById("output").innerHTML = "= " + op1;
+        }
         
         if( inputCounter == 2 ) // restarts process
         {
