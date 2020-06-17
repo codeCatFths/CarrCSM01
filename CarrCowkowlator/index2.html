@@ -5,15 +5,20 @@
         
         <title>Carr Cowkowl@tor</title>
         <link rel="icon" type="image/gif" sizes="16x16" href="images/cowicon.png">
-        <script src="behavior2.js"></script>
-        
+        <script src="behaviorcow.js"></script>
+            
         <style>
+            
         body{
             font-family: "American Typewriter";
             background-image: url('images/cowpattern.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-color: white;
+        }
+        
+        table{
+            border: 10px black;
         }
         
         td{
@@ -25,14 +30,16 @@
             height: 50px;
             
             border-radius: 90px;
-            background-color: rgb(255, 255, 255, .85);
+            border: 1px solid black;
+            background-color: rgb(255, 255, 255, .9);
             font-family: "American Typewriter";
             font-weight: bold;
             font-size: 1.25em;
         }
-        
+            
         button:focus{
             outline-color: rgb(0, 0, 0,.1);
+            outline-width: 0;
         }
         
         button:hover{
@@ -46,27 +53,29 @@
         }
         
         #display{
+            background-color: black;
+            color: white;
             height: 50px;
+            border-radius: 45px;
+            border: 1px solid white;
             padding-left: 10px;
             padding-right: 10px;
-            
-            background-color: black;
-            border: 1px solid white;
-            border-radius: 45px;
+            text-align: right;
+            font-size: 40px;
         }
         
         #output{
+            background-color: black;
+            color: white;
+            font-family: "American Typewriter";
+            font-weight: bold;
+            font-size: .8em;
+            text-align: right;
             margin-right: 10px;
             margin-top: 0;
             margin-bottom: 0;
             width: 220px;
-            
             border: 0;
-            text-align: right;
-            font-family: "American Typewriter";
-            font-size: 30px;
-            font-weight: bold;
-            color: white;
         }
         
         #main{
@@ -106,11 +115,15 @@
             var moo = new Audio();
             moo.src = "media/moo.mp3";
             
+        </script>
+        
+        <script>
+            
             var mmmpie = new Audio();
             mmmpie.src = "media/mmmpie.mp3";
             
         </script>
-        
+            
     </head>
     
     <body>
@@ -122,7 +135,7 @@
             <p>Click in order:
             <br>digit key, symbol key
             <br>digit key, equals key
-            <br><small style="color: red;">"<strong>random</strong>" counts as digit</small>
+            <br><small style="color: red;">NOTE: "random" counts as digit</small>
             </p>
             
             <table id="face">
@@ -162,14 +175,14 @@
                 
                 <tr>
                     <td colspan=2><button type="button" class="doublebutton" style="color: red;" onclick="getRandom()">random</button></td>
-                    <td colspan=2><button type="button"" class="doublebutton" style="color: #00C800;" onclick="calculate()">equals</button></td>
+                    <td colspan=2><button type="button" class="doublebutton" style="color: #00C800;" onclick="calculate()">equals</button></td>
                 </tr>
             </table>
             
             <p id="programmer">By: Conni Carr</p>
             <p><small><a href="https://www.bensound.com/">Music: Bensound</a></small></p>
             
-            <audio id="myAudio" autoplay="true" controls loop>
+            <audio id="myAudio" autoplay="true" controls="controls" loop="loop">
             <source src="media/bensound-cute.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
@@ -178,4 +191,3 @@
         
     </body>
 </html>
-
