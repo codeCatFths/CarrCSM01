@@ -17,6 +17,26 @@ var operator     = "@";
 var result       = 0.0; // send to display
 var inputCounter = 0;   // track entries for simple calculation process
 
+// resets variables to default values
+function resetVariables()
+{
+    random       = 0.0;
+    op1          = 0.0;
+    op2          = 0.0;
+    operator     = "@";
+    result       = 0.0; // calculation answer
+    inputCounter = 0;   // track entries for calculation
+    
+} // end resetVariables()
+
+// responds to press of C key, resets variables, reloads page
+function clearAll()
+{
+    resetVariables();
+    location.reload();
+    
+} // end clearAll()
+
 // responds to press of "random" key, generates 1-100
 function getRandom()
 {
@@ -46,6 +66,7 @@ function getRandom()
     }
 } // end getRandom()
 
+// responds to press of numeric digit key, values 0-9
 function getDigit(digit)
 {
     if(inputCounter == 0)
@@ -82,6 +103,7 @@ function getDigit(digit)
     }
 }
 
+// responds to press of operator key, values +,-,*,/
 function getOperator(op)
 {
     if(inputCounter == 1)
@@ -99,26 +121,6 @@ function getOperator(op)
         }
     }
 }
-
-// resets variables to default values
-function resetVariables()
-{
-    random       = 0.0;
-    op1          = 0.0;
-    op2          = 0.0;
-    operator     = "@";
-    result       = 0.0; // calculation answer
-    inputCounter = 0;   // track entries for calculation
-    
-} // end resetVariables()
-
-// responds to press of C key, resets variables, reloads page
-function clearAll()
-{
-    resetVariables();
-    location.reload();
-    
-} // end clearAll()
 
 // responds to press of "equals" key, completes calculation, displays answer
 function calculate()
@@ -171,25 +173,27 @@ function calculate()
         else // outputs division by zero error to display
         {
             // CREDIT: http://www.rosswalker.co.uk/movie_sounds/2001_and_2010.htm
-            var audio = new Audio('http://www.rosswalker.co.uk/movie_sounds/sounds_files_20150201_1096714/2001_and_2010/cantdo.wav');
-            audio.type = 'audio/wav';
-            audio.play();
+            var audioError = new Audio('http://www.rosswalker.co.uk/movie_sounds/sounds_files_20150201_1096714/2001_and_2010/cantdo.wav');
+            audioError.type = 'audio/wav';
+            audioError.play();
             document.getElementById("output").innerHTML = "No / by 0";
         }
     }
     else // handles inappropriate user entry
     {
         if( inputCounter == 0 ) // continues processs if operator clicked first
+        {
             document.getElementById("output").innerHTML = "pick #";
+        }
         
         if( inputCounter == 1 ) // ends process, show current op1 value
-            document.getElementById("output").innerHTML = "=" + op1;
         {
+            document.getElementById("output").innerHTML = "=" + op1;
+        
             if( op1 == 3.14159 )
             {
                 mmmpie.play();
             }
-            document.getElementById("output").innerHTML = "= " + op1;
         }
         
         if( inputCounter == 2 ) // restarts process
@@ -201,7 +205,3 @@ function calculate()
     // clear input for next round
     resetVariables();
 } // end calculate()
-
-
-
-
