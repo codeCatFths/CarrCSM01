@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Carr Cowkowl@tor</title>
+        <link rel="icon" type="image/gif" sizes="16x16" href="images/cowicon.png">
+        <script src="behaviorcowEXPERIMENTAL.js"></script>
+            
+        <style>
+            
+        body{
+            background-color: white;
+            background-image: url('images/cowpattern.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: "American Typewriter";
+        }
+        
+        td{
+            padding: 5px;
+        }
+        
+        button{
+            width: 50px;
+            height: 50px;
+            
+            border: 1px solid black;
+            border-radius: 90px;
+            background-color: rgb(255, 255, 255, .9);
+            
+            
+            font-family: "American Typewriter";
+            font-weight: bold;
+            font-size: 1.25em;
+        }
+            
+        button:focus{
+            outline-color: rgb(0, 0, 0,.1);
+            outline-width: 0;
+        }
+        
+        button:hover{
+            background-color: rgb(0, 0, 0, 1);
+            border: 1px solid lime;
+            color: lime;
+        }
+        
+        .doublebutton{
+            width: 125px;
+        }
+        
+        #display{
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 20px;
+            
+            border: 1px solid white;
+            border-radius: 45px;
+            
+            background-color: black;
+        }
+        
+        #output{
+            margin-top: 0;
+            margin-bottom: 0;
+            
+            font-family: "American Typewriter";
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            
+            text-align: right;
+        }
+        
+        #main{
+            width: 300px;
+            height: 600px;
+            
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            background-position: center;
+            background-color: rgb(255, 255, 255,.95);
+            
+            border: 1px solid black;
+            border-radius: 12px;
+            
+            text-align: center;
+        }
+        
+        #face{
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url('images/cowhide400x400.png');
+        }
+        
+        #programmer{
+            color: lime;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        #cowicon{
+            border-radius: 12px;
+        }
+        
+        </style>
+        
+        <script>
+            
+            var moo = new Audio();
+            moo.src = "media/moo.mp3";
+            
+        </script>
+        
+        <script>
+            
+            var mmmpie = new Audio();
+            mmmpie.src = "media/mmmpie.mp3";
+            
+        </script>
+            
+    </head>
+    
+    <body>
+        
+        <div id="main">
+            
+            <h1>Carr's Cowkowl@tor</h1>
+            
+            <p>Click in order:
+            <br>digit key, symbol key
+            <br>digit key, equals key
+            <br><small style="color: #800fdb;"><strong>random</strong> counts as digit</small>
+            </p>
+            
+            <table id="face">
+                <tr>
+                    <td colspan=4 id="display">
+                        <p id="output"></p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><button type="button" onclick="getDigit(1);">1</button></td>
+                    <td><button type="button" onclick="getDigit(2);">2</button></td>
+                    <td><button type="button" onclick="getDigit(3);">3</button></td>
+                    <td><button type="button" onclick="getOperator('/');">/</button></td>
+                </tr>
+                
+                <tr>
+                    <td><button type="button" onclick="getDigit(4);">4</button></td>
+                    <td><button type="button" onclick="getDigit(5);">5</button></td>
+                    <td><button type="button" onclick="getDigit(6);">6</button></td>
+                    <td><button type="button" onclick="getOperator('*');">*</button></td>
+                </tr>
+                
+                <tr>
+                    <td><button type="button" onclick="getDigit(7);">7</button></td>
+                    <td><button type="button" onclick="getDigit(8);">8</button></td>
+                    <td><button type="button" onclick="getDigit(9);">9</button></td>
+                    <td><button type="button" onclick="getOperator('-');">-</button></td>
+                </tr>
+                
+                <tr>
+                    <td><button type="button" onclick="clearAll();">C</button></td>
+                    <td><button type="button" onclick="getDigit(0);">0</button></td>
+                    <td><button type="button" onclick="getDigit(3.14159);" style="background-image: url('images/pie.png'); background-position: center;"></button></td>
+                    <td><button type="button" onclick="getOperator('+');">+</button></td>
+                </tr>
+                
+                <tr>
+                    <td colspan=2><button type="button" class="doublebutton" style="color: #800fdb;" onclick="getRandom()">random</button></td>
+                    <td colspan=2><button type="button" class="doublebutton" style="color: #00C800;" onclick="calculate()">equals</button></td>
+                </tr>
+            </table>
+            
+            <p id="programmer">By: Conni Carr</p>
+            
+            <p>
+            <small><a href="https://www.bensound.com/">Music: Bensound</a></small>
+            </p>
+            
+            <audio id="myAudio" autoplay="true" controls="controls" loop="loop">
+            <source src="media/bensound-cute.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            
+        </div>
+        
+    </body>
+</html>
+
