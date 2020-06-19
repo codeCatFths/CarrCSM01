@@ -41,6 +41,12 @@ RANDOM KEY
 ------------------------------------
 Pressing the "random" key generates a random integer from 1-100 to act as a digit for process steps 0 and 2.
 
+ERROR HANDLING: Attempting to press the random key after using for operand 1 triggers an error message "+ - * /" 
+                indicating the need to press an operator key next.
+                
+ERROR HANDLING: Attempting to press the random key after using for operand 2 triggers the calculate() function
+                thus displaying the answer to the calculation being processed. It acts as a back up "enter" key.
+
 ------------------------------------
 EQUALS KEY
 ------------------------------------
@@ -51,9 +57,15 @@ A sound is also triggered when pressing the "equals" key. A cow moos.
 ------------------------------------
 PIE KEY
 ------------------------------------
-Pressing the "pie" key generates the value of PI to the 5 decimal places (3.14159) for operand 1 or operand 2 or both.
+Pressing the "pie" key generates the value of PI to 5 decimal places (3.14159) for operand 1 or operand 2 or both.
 
 A sound is also triggered when pressing the "pie" key. Homer Simpson saying "MMM, pie..."
+
+ERROR HANDLING: Attempting to press the pie key after using for operand 1 triggers an error message "+ - * /" 
+                indicating the need to press an operator key next.
+                
+ERROR HANDLING: Attempting to press the pie key after using for operand 2 triggers the calculate() function
+                thus displaying the answer to the calculation being processed. It acts as a back up "enter" key.
 
 ------------------------------------
 DIVIDE BY ZERO ERROR
@@ -67,7 +79,7 @@ A sound is also triggered when dividing by zero. It is a sound clip by HAL from 
 RESULT == 42
 ------------------------------------
 When the result is 42, a text message replaces the author name information for 5 seconds.
-It reads "You have discovered the ultimate meaning of Life, the Universe, and Everything!'
+It reads "You have discovered the ultimate meaning of Life, the Universe, and Everything!"
 
 ------------------------------------
 MUSIC ON INITIAL PAGE LOAD
