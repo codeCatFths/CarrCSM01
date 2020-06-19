@@ -200,7 +200,7 @@ function calculate()
         {
             document.getElementById("output").innerHTML = "= " + op1;
         
-            if( op1 == 3.14159 )
+            if( op1 == 3.14159 || result == 3.14159 )
             {
                 mmmpie.play();
             }
