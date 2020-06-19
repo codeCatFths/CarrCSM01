@@ -54,6 +54,18 @@ Pressing the calculate key launches the calculation indicated by the chosen oper
 
 A sound is also triggered when pressing the "equals" key. A cow moos.
 
+ERROR HANDLING: Attempting to press the equals key as first step triggers an error message "pick #" 
+                indicating the need to press a digit key.
+
+ERROR HANDLING: Attempting to press the equals key after operand 1 triggers a message showing "= n" 
+                where n is the digit previously pressed.
+                
+ERROR HANDLING: Attempting to press the equals key after initial press triggers an error message "pick #" 
+                indicating the need to press a digit key next.
+
+ERROR HANDLING: Attempting to press the equals key after an operator triggers an error message "do over" 
+                and restarts the process.
+                
 ------------------------------------
 PIE KEY
 ------------------------------------
