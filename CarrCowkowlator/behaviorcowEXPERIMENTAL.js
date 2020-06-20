@@ -182,8 +182,8 @@ function calculate()
         }
         else // outputs division by zero error to display
         {
-            // CREDIT: http://www.rosswalker.co.uk/movie_sounds/2001_and_2010.htm
-            var audioError = new Audio('http://www.rosswalker.co.uk/movie_sounds/sounds_files_20150201_1096714/2001_and_2010/cantdo.wav');
+            // CREDIT: https://movie-sounds.org/sci-fi-movie-samples/quotes-with-sound-clips-from-2001-a-space-odyssey-1968/i-m-sorry-dave-i-m-afraid-i-can-t-do-that
+            var audioError = new Audio("media/i'm-sorry-dave-i'm-afraid-i-can't-do-that.mp3");
             audioError.type = 'audio/wav';
             audioError.play();
             document.getElementById("output").innerHTML = "No / by 0";
