@@ -11,8 +11,8 @@ Pressing a DIGIT key for first operand both displays the digit and saves it to a
 --OPERAND 1 is step 0 in the process. The counter updates after first operand is saved to memory.
 
 ERROR HANDLING: Attempting to press another digit key immediately thereafter triggers an error message "+ - * /" 
-                indicating the need to press an operator key next.
-                
+                indicating the need to press an operator key next.                
+---------------
 Pressing an OPERATOR key (following the first digit key press) displays the chosen operator and 
 saves it to a variable in memory.
 
@@ -25,6 +25,7 @@ ERROR HANDLING: Attempting to press an operator key in process step 0 triggers a
 ERROR HANDLING: Attempting to press a second operator key immediately after initial press triggers an error message "pick #" 
                 indicating the need to press a digit key next.
                 
+---------------
 Pressing a DIGIT key for second operand both displays the digit and saves it to a variable in memory.
 
 --An internal counting variable tracks the number of the "operation" in the process.
