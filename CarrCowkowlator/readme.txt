@@ -51,7 +51,7 @@ ERROR HANDLING: Attempting to press the random key after using for operand 2 tri
 ------------------------------------
 EQUALS KEY
 ------------------------------------
-Pressing the calculate key launches the calculation indicated by the chosen operator (+.-,*,/).
+Pressing the "equals" key launches the calculation indicated by the chosen operator (+.-,*,/).
 
 If a proper processes has completed, a sound is also triggered when pressing the "equals" key. A cow moos.
 
