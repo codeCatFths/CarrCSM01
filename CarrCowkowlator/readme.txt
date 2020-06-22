@@ -86,7 +86,6 @@ DIVIDE BY ZERO ERROR
 Attempting to divide by zero triggers an error message in the display "No / by zero" and ends the process.
 
 A sound is also triggered when dividing by zero. It is a sound clip by HAL from 2001: A Space Odessey.
-***This works on desktop and laptop but not in GitHub preview.
 
 ------------------------------------
 RESULT == 42
