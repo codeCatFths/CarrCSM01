@@ -53,7 +53,7 @@ EQUALS KEY
 ------------------------------------
 Pressing the "equals" key launches the calculation indicated by the chosen operator (+.-,*,/).
 
-If a proper processes has completed, a sound is also triggered when pressing the "equals" key. A cow moos.
+If a proper process has completed, a sound is also triggered when pressing the "equals" key. A cow moos.
 
 ERROR HANDLING: Attempting to press the equals key as first step triggers an error message "pick #" 
                 indicating the need to press a digit key.
